@@ -95,7 +95,7 @@ function FEMBase.run!(solver::Solver{Modal})
     problems = get_problems(solver)
     properties = solver.properties
 
-    @info("Starting natural frequency solver at time $time")
+    @info("HOx! Starting natural frequency solver at time $time")
 
     @timeit "assemble matrices" begin
         assemble!(solver, time; with_mass_matrix=true)
